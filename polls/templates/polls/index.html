@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <title>登录</title>
+    </head>
+    <body>
+        <div class="login-main" style="width:300px;height:400px">
+            <div class="top">
+                <h3>账号登录</h3>
+                <form method="get" action="login">
+                    <input type="text" name="username" placeholder="用户名" style="width:200px;height:20px;margin-top:10px;margin-left:10px"><br>
 
+                    <input type="text" name="password" placeholder="密码" style="width:200px;height:20px;margin-top:10px;margin-left:10px"><br>
+                    <input type="checkbox" style="margin-top:10px;margin-left:10px">下次自动登录
+                    <a href="https://www.baidu.com/"style="margin-top:10px;margin-left:10px">百度一下</a><br>
+                    <button type="submit" style="margin-top:10px;margin-left:10px">登录</button>
+                </form>
+            </div>
+            <div class="center"></div>
+            <div class="bottom">
 
-逗比请登录：<br>
-<form action="login" method="get">
-    <input name="username" placeholder="用户名"><br>
-    <input name="password" placeholder="密码"><br>
-    <input type="submit" value="提交">
-</form>
-
-</body>
+            </div>
+        </div>
+    </body>
 </html>
