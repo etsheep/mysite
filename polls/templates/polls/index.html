@@ -3,24 +3,35 @@
     <head>
         <meta charset="UTF-8">
         <title>登录</title>
+        <link href="/static/css/index.css">
     </head>
     <body>
-        <div class="login-main" style="width:300px;height:400px">
+        <div class="login-main">
             <div class="top">
                 <h3>账号登录</h3>
                 <form method="get" action="login">
-                    <input type="text" name="username" placeholder="用户名" style="width:200px;height:20px;margin-top:10px;margin-left:10px"><br>
+                    <input class="text-input" type="text" name="username" placeholder="用户名"><br>
 
-                    <input type="text" name="password" placeholder="密码" style="width:200px;height:20px;margin-top:10px;margin-left:10px"><br>
-                    <input type="checkbox" style="margin-top:10px;margin-left:10px">下次自动登录
-                    <a href="https://www.baidu.com/"style="margin-top:10px;margin-left:10px">百度一下</a><br>
-                    <button type="submit" style="margin-top:10px;margin-left:10px">登录</button>
+                    <input class="text-input mgb0" type="text" name="password" placeholder="密码"><br>
+                    <div class="error-mess" id="error">
+                        <span class="error-icon"></span>
+                        <span id="error-message">账号或密码错误，请从新输入</span>
+                    </div>
+                    <div>
+                        <input type="checkbox"> <span>下次自动登录</span>
+
+                        <a href="https://www.baidu.com/">百度一下</a>
+                    </div>
+                    <button type="button" id="submit">登录</button>
                 </form>
             </div>
             <div class="center"></div>
             <div class="bottom">
-
+                <span>第三方登陆</span>
             </div>
         </div>
     </body>
+    <script src="/static/js/index.js">
+
+    </script>
 </html>

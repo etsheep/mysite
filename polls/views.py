@@ -1,3 +1,5 @@
+# coding:utf-8
+
 from django.http import HttpResponse
 from django.template import loader
 from django.http import Http404
@@ -7,7 +9,7 @@ from .models import Question
 
 
 def index(request):
-    template = loader.get_template('polls/index.html')
+    template = loader.get_template('polls/index_bak.html')
     context = {}
     return HttpResponse(template.render(context, request))
 
