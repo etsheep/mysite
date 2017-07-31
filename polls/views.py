@@ -9,7 +9,7 @@ from .models import Question
 
 
 def index(request):
-    template = loader.get_template('polls/index_bak.html')
+    template = loader.get_template('polls/index.html')
     context = {}
     return HttpResponse(template.render(context, request))
 

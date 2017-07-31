@@ -1,9 +1,10 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <title>登录</title>
-        <link href="/static/css/index.css">
+        <link rel="stylesheet" type="text/css" href="{% static "css/index.css" %}">
     </head>
     <body>
         <div class="login-main">
@@ -31,7 +32,5 @@
             </div>
         </div>
     </body>
-    <script src="/static/js/index.js">
-
-    </script>
+    <script src="{% static "js/index.js" %}"></script>
 </html>
